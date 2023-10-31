@@ -82,7 +82,7 @@ const SelfServiceMachine = {
             var total = 0;
             this.products.forEach(element => {
                 if(element.active) {
-                    total += element.price + element.quantity
+                    total += element.price * element.quantity
                 }
             });
 
